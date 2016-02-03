@@ -28,7 +28,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r57/three.min.js"></script>
 		<script>
 
-			var camera, scene, renderer;
+			var camera, camera2, scene, renderer;
 			var geometry, material, mesh;
 
 			var init = function () {
@@ -38,7 +38,12 @@
 				document.body.appendChild( renderer.domElement );
 
 				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1000 );
-				camera.position.z = 250;
+				camera.position.z = 750;
+				camera.position.x = 100;
+				camera2 = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1000 );
+				camera2.position.z = 750;
+				camera2.position.x = -100;
+
 
 				scene = new THREE.Scene();
 
