@@ -26,13 +26,18 @@
 		<script>
 			var camera, scene, renderer;
 			var geometry, material, mesh;
+			
+			
+			
 			var init = function () {
 				renderer = new THREE.CanvasRenderer();
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				document.body.appendChild( renderer.domElement );
 				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1000 );
+				
+				readMousePos(event);
+			
 				camera.position.z = 750;
-				camera.position.x = 500;
 				
 				scene = new THREE.Scene();
 				geometry = new THREE.SphereGeometry( 200, 20, 20 );
@@ -46,6 +51,15 @@
 				mesh.rotation.y = Date.now() * 0.001;
 				renderer.render( scene, camera );
 			}
+			
+			function readMousePos(event) {
+				camera.position.x = event.clientX;
+				camera.position.y = event.clientY;
+			}
+
+			document.addEventListener("click", readMousePos);
+			
+			
 			init();
 			animate();
 		</script>
