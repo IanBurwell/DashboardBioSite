@@ -54,7 +54,7 @@
 				//mesh.rotation.x = Date.now() * 0.0005;
 				//mesh.rotation.y = Date.now() * 0.001;
 				
-				camera.position.x += ( 0 - (mouseX - camera.position.x) );
+				camera.position.x += ( mouseX - camera.position.x );
 				camera.position.y += ( mouseY - camera.position.y );
 
 				camera.lookAt( scene.position );
