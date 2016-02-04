@@ -25,7 +25,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r57/three.min.js"></script>
 		<script>
 			var camera, scene, renderer;
-			var geometry, material, mesh;
+			var geometry, material, torusKnot;
 			
 			var mouseX = 0, mouseY = 0;
 			var windowHalfX = window.innerWidth / 2;
@@ -44,10 +44,10 @@
 				camera.position.x = 0;
 				
 				scene = new THREE.Scene();
-				geometry = new new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
-				material = new THREE.MeshBasicMaterial( { color: 0x02004A } );
-				mesh = new THREE.Mesh( geometry, material );
-				scene.add( mesh );
+				 geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
+				 material = new THREE.MeshBasicMaterial( { color: 0xffff00 } );
+				 torusKnot = new THREE.Mesh( geometry, material );
+				scene.add( torusKnot );
 			}
 			var animate = function () {
 				requestAnimationFrame( animate );
