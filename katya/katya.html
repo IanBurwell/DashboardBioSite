@@ -34,6 +34,7 @@
             scene.add( sphere );
             sphere.castShadow = true;
             sphere.receiveShadow = true;
+            sphere.position.x = Math.random()-0.5 * 10;
             
             //light
             var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
