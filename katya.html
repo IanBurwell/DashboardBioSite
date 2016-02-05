@@ -51,8 +51,9 @@
                 sphere.rotation.y +=Math.random();
                 sphere.rotation.z +=Math.random();
                 sphere.scale.x +=Math.random();
+                sphere.scale.x -=Math.random();
                 renderer.render( scene, camera );
-            }
+            } 
         
         //actually render
         render();
