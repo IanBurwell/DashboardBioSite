@@ -11,20 +11,21 @@
 			max-width: 600px;
 			text-align: center;
 		}
-		#green_box {
-			height: 40px;
-			width: 40px;
-			background: green;
+		#button {
+			height: 50px;
+			width: 50px;
+			border-radius: 25px;
+			background: red;
 		}
 	</style>
 </head>
 <body>
 	<h1>Hiiiiii</h1>
   
-  	<div id="green_box"></div>
+  	<div id="button"></div>
   	<script>
-		document.getElementById("green_box").addEventListener('click', function(e) {
-			alert("green");
+		document.getElementById("button").addEventListener('click', function(e) {
+			alert("you pushed the button.");
 		});
 	</script>
 </body>
