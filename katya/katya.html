@@ -50,8 +50,20 @@
                 sphere.rotation.x +=Math.random();
                 sphere.rotation.y +=Math.random();
                 sphere.rotation.z +=Math.random();
+                if(sphere.scale.x<1.5) {
+                    sphere.scale.x +=Math.random();
+                }
+                if(sphere.scale.x>0.5) {
+                    sphere.scale.x -=Math.random();
+                }
+                if(sphere.scale.y<1.5) {
+                    sphere.scale.y +=Math.random();
+                }
+                if(sphere.scale.y>0.5) {
+                    sphere.scale.y -=Math.random();
+                }
                 renderer.render( scene, camera );
-            } 
+            }
         
         //actually render
         render();
