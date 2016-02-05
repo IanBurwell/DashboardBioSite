@@ -1,6 +1,11 @@
 <!doctype html>
 
 <html lang="en">
+
+<style>
+BODY {SCROLLBAR-FACE-COLOR: #D4D0C8; SCROLLBAR-HIGHLIGHT-COLOR: #999999; SCROLLBAR-SHADOW-COLOR: #999999; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR:  #000000; SCROLLBAR-TRACK-COLOR: #E3E3E3; SCROLLBAR-DARKSHADOW-COLOR: #666666; }
+</style>
+
 <head>
   <meta charset="utf-8">
 <style>
@@ -21,46 +26,8 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-<body>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r57/three.min.js"></script>
 
-<script>
-
-// create the particle variables
-var particleCount = 1800,
-    particles = new THREE.Geometry(),
-    pMaterial = new THREE.ParticleBasicMaterial({
-      color: 0xFFFFFF,
-      size: 20
-    });
-
-// now create the individual particles
-for (var p = 0; p < particleCount; p++) {
-
-  // create a particle with random
-  // position values, -250 -> 250
-  var pX = Math.random() * 500 - 250,
-      pY = Math.random() * 500 - 250,
-      pZ = Math.random() * 500 - 250,
-      particle = new THREE.Vertex(
-        new THREE.Vector3(pX, pY, pZ)
-      );
-
-  // add it to the geometry
-  particles.vertices.push(particle);
-}
-
-// create the particle system
-var particleSystem = new THREE.ParticleSystem(
-    particles,
-    pMaterial);
-
-// add it to the scene
-scene.addChild(particleSystem);
+<body>Hello World</body>
 
 
-
-
-</script>
-</body>
 </html>
