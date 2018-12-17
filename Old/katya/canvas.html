@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas Test</title>
+  </head>
+  
+  <body>
+    <canvas id="canvas" width="128" height="128"></canvas>
+    <script>
+      var canvas = document.getElementById("canvas"),
+      ctx = canvas.getContext("2d"),
+      image = document.getElementById("testImage");
+      ctx.drawImage(image,0,0);var imgd = ctx.getImageData(0, 0, 128, 128),
+    	pix = imgd.data,
+    </script>
+  </body>
+</html>
