@@ -5,7 +5,7 @@ import { COLORS } from '../../constants/colors';
 
 export default (function () {
 	
-	
+
   // ------------------------------------------------------
   // @Dashboard Sparklines
   // ------------------------------------------------------

@@ -612,7 +612,7 @@
                     <div class="peer bdL p-20 w-30p@lg+ w-100p@lg-">
                       <div class="layers">
                         <div class="layer w-100">
-                          <!-- Progress Bars
+                          <!-- Progress Bars -->
                           <div class="layers">
                             <div class="layer w-100">
                               <h5 class="mB-5">100k</h5>
@@ -647,7 +647,6 @@
                               </div>
                             </div>
                           </div>
-							-->
 							
                           <!-- Pie Charts -->
                           <div class="peers pT-20 mT-20 bdT fxw-nw@lg+ jc-sb ta-c gap-10">
@@ -661,7 +660,7 @@
                               <div class="easy-pie-chart" data-size='80' data-percent="45" data-bar-color='#2196f3'>
                                 <span></span>
                               </div>
-                              <h6 class="fsz-sm">Probabilty of Me Being Able to Flip</h6>
+                              <h6 class="fsz-sm">Probabilty</h6>
                             </div>
                             <div class="peer">
                               <div class="easy-pie-chart" data-size='80' data-percent="110" data-bar-color='#ff9800'>
@@ -866,28 +865,28 @@
                             <!-- Temprature -->
                             <div class="layer w-100">
                               <div class="peers fxw-nw ai-c">
-                                <div class="peer mR-20">
-                                  <h3>32<sup>°F</sup></h3>
+                                <div class="peer mR-20" id="curTemp">
+                                  --
                                 </div>
                                 <div class="peer">
-                                  <canvas class="sleet" width="44" height="44"></canvas>
+                                  <canvas id="curWeatherPic" width="44" height="44"></canvas>
                                 </div>
                               </div>
                             </div>
 
                             <!-- Condition -->
                             <div class="layer w-100">
-                              <span class="fw-600 c-grey-600">Partly Clouds</span>
+                              <span class="fw-600 c-grey-600" id="curCondition">--</span>
                             </div>
                           </div>
                         </div>
                         <div class="peer">
                           <div class="layers ai-fe">
                             <div class="layer">
-                              <h5 class="mB-5">Monday</h5>
+                              <h5 class="mB-5" id="curDay">--</h5>
                             </div>
                             <div class="layer">
-                              <span class="fw-600 c-grey-600">Nov, 01 2017</span>
+                              <span class="fw-600 c-grey-600" id="curDate">--, -- ----</span>
                             </div>
                           </div>
                         </div>
